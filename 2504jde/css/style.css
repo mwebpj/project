@@ -175,17 +175,16 @@ header {
 }
 
 .keyword-title {
-  margin-top: 160px; /* 첫 번째니까 안 띄워도 됨 */
+  margin-top: 160px; 
 }
 
 .education-title {
-  margin-top: 60px; /* Keyword 다음 간격 */
+  margin-top: 60px;
 }
 
 .skills-title {
-  margin-top: 60px; /* Education 다음 간격 */
-  margin-bottom: px; /* 스킬 리스트와 간격 줄이기 */
-}
+  margin-top: 60px; 
+  margin-bottom: px; }
 
 /* 동그라미 */
 
