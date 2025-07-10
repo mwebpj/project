@@ -37,8 +37,7 @@ body{
     height: 12px;
     background-color:#1A1A1A;
 }
-.main_gnb > ul > li,
-.main_title{
+.main_gnb ul li{
     font-size: 14px;
     font-weight: 500;
     padding: 8px;
@@ -49,12 +48,14 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: center;     
 }
-.main_title a {
+.main_title a{
     position: relative;
     display: inline-block;
-    color: #1A1A1A;    
+    color: #1A1A1A;
+    font-size: 14px;
+    font-weight: 500;
 }
 .main_title a::after {
     content: "";
