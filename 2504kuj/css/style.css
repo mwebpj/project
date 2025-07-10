@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+#wrapper {
+    position: relative;
+    min-width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section1 {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 160px;
+}
+
+.section1 .menu1 {
+    position: absolute;
+    top: 450px;
+    right: 50%;
+    margin-right: 70px;
+}
+
+.section1 .menu1 a:hover {
+    color: #399cff;
+}
+
+.section1 .menu2 {
+    position: absolute;
+    top: 548px;
+    right: 50%;
+    margin-right: 70px;
+}
+
+.section1 .menu2 a:hover {
+    color: #399cff;
+}
+
+.section1 .menu p a {
+    font-size: 24px;
+    color: #313131;
+}
+
+.section1 .imges {
+    width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section2 {
+    margin-bottom: 160px;
+}
+
+.section2 .profile {
+    width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section3 {
+    position: relative;
+    width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 160px;
+
+}
+
+.section3 h1 {
+    color: #399cff;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 70px;
+    font-weight: 900;
+}
+
+.section3 .projects a {
+    width: 1224px;
+}
+
+.section3 .projects a img {
+    margin-bottom: 20px;
+}
+
+.section3 .projects a img:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+
+.section3 .project2 img {
+    margin-left: 288px;
+}
+
+.section4 h1 {
+    color: #399cff;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 70px;
+    font-weight: 900;
+}
+
+.section4 p {
+    font-size: 28px;
+    color: #313131;
+    text-align: center;
+    margin-bottom: 110px;
+}
+
+.section4 .contact {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.section4 .contact .icon img:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+}

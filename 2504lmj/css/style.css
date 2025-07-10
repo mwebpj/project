@@ -1,0 +1,205 @@
+@charset "utf-8";
+#wrapper{
+    position: relative;
+    min-width: 1480px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 본문 공통 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 헤더 */
+header{
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+}
+
+.gnb ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-top: 30px;
+    gap: 120px;  
+    background-color: #FFF0EE;
+}
+
+.gnb > ul > li a:hover{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #333;
+}
+.gnb li{
+    font-weight: 700;
+    font-size: 20px;
+}
+.gnb a{
+    color: #333;
+}
+
+/* 메인 콘텐츠 */
+/* main1_hero */
+#main1 {
+    padding-top: 100px;
+    display: flex;
+    margin-bottom: 120px;
+    background-color: #FFF0EE;
+}
+#main1 .inner{
+    width: 1440px;
+    display: flex;
+}
+#main1 .hero{
+    justify-content: space-between;
+}
+#main1 .hero .photo{
+    padding-right: 145px;
+}
+#main1 .hero .text{
+    font-size: 100px;
+    font-weight: 700;
+    margin-right: 230px;
+    margin-left: 150px;
+}
+
+/* main2_about me */
+#main2{
+    height: 720px;
+    display: flex;
+}
+#main2 .photo{
+    align-items: start;
+    margin-right: 200px;
+}
+#main2 .text .text1{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: right;
+    padding-top: 50px;
+}
+#main2 .text .text2{
+    font-size: 80px;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 60px;
+}
+#main2 .text .text3{
+    font-size: 20px;
+    text-align: right;
+}
+
+/* main3_skill&tool */
+#main3{
+    height: 1080px;
+    background-image: url(../img/skillntool_background.png);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+#main3 .skillntool{
+    display: flex;
+    margin: auto;
+    gap: 100px;
+}
+#main3 .skillntool .name{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 50px;
+}
+#main3 .skillntool .icon{
+    align-content: center;
+}
+
+/* main4_project */
+#main4{
+    height: 1080px;
+    background-image: url(../img/project_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+#main4 .top{
+    display: flex ;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 40px;
+    padding-top: 90px;
+    gap: 70px;
+}
+#main4 .center{
+    display: flex;
+    flex-direction: column;
+}
+#main4 .center .name{
+    display: flex;
+    justify-content: center;
+    gap: 724px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: normal;
+}
+#main4 .center .website{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#main4 .modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#main4 .modal li{
+    display: none;
+}
+
+
+/* 푸터 */
+#footer{
+    height: 720px;
+    text-align: center;
+}
+#footer h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 50px;
+    padding-top: 100px;
+}
+#footer .sub{
+    font-size: 40px;
+    margin-bottom: 150px;
+}
+#footer .contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin: 0 auto;
+}
+#footer .call, .mail, .instagram{
+    display: flex;
+    align-items: center;
+}
+#footer .call_img, .mail_img, .instagram_img{
+    width: 70px;
+    height: 70px;
+    padding-right: 50px;
+}
+#footer .number, .adress, .id {
+    font-size: 40px;
+    color: #333;
+    font-weight: 500;
+}

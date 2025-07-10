@@ -1,0 +1,45 @@
+@charset "UTF-8" ;
+
+/*
+ 태그 고유 스타일을 없애기
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+* > 모든 태그를 의미
+*/
+
+body {
+    font-family: "Pretendard", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #121212;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    vertical-align: top;
+    font-family: "Pretendard", sans-serif;
+}
+
+input {
+    vertical-align: top;
+    font-family: "Pretendard", sans-serif;
+}

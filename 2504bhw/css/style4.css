@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.logodesign {
+    overflow: hidden;
+}
+
+.gnb {
+    background-color: #fff;
+}
+
+.gnb .list {
+    width: 1440px;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.gnb .list .photo1 {
+    margin-left: -160px;
+    margin-right: 690px;
+}
+
+.gnb ul {
+    display: flex;
+    gap: 80px;
+}
+
+.gnb ul li {
+    height: 13px;
+}
+
+.logodesign .photo {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logodesign .photo img {
+    margin-left: -240px;
+}

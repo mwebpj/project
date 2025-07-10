@@ -1,0 +1,816 @@
+@charset "UTF-8";
+
+#wrapper {
+    min-width: 1480px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+}
+
+#header .logo {
+    margin-left: 40px;
+
+}
+
+
+
+
+.gnb {
+    display: flex;
+    gap: 32px;
+}
+
+.gnb > ul {
+    display: flex;
+    align-items: center;
+}
+
+.gnb > ul:first-child::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #121212;
+}
+
+.gnb > ul > li {
+    position: relative;
+}
+
+.gnb > ul > li > a {
+    display: block;
+    color: #121212;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.gnb > ul > li > a > span {
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+.gnb > ul > li:hover > a > span {
+    border-bottom: 2px solid #121212;
+}
+
+
+.gnb .sub {
+    background-color: #ffffff;
+    width: 120%;
+    height: 120px;
+    position: absolute;
+    left: 28px;
+    top: 44px;
+    display: none;
+}
+
+.gnb:hover .sub {
+    display: block;
+}
+
+.gnb .sub ul {
+    padding-top: 10px;
+}
+
+.gnb .sub a {
+    display: block;
+    line-height: 32px;
+    color: #121212;
+    font-weight: 500;
+} 
+
+
+.icons {
+    overflow: hidden;
+    margin-right: 40px;
+}
+
+.icons ul {
+    display: flex;
+    gap: 32px;
+}
+
+.icons li .on {
+    display: none;
+}
+
+.icons li:hover .default{
+    display: none;
+}
+
+.icons li:hover .on{
+    display: block;
+}
+
+/*본문 공통*/
+#container > div {
+    margin-bottom: 160px;
+}
+
+.title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sect-title {
+    font-size: 36px;
+    color: #121212;
+    margin-bottom: 40px;
+}
+
+.sub-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #121212;
+}
+
+.main1 .main2, .main3, .main4, .main5, .main6, .main7 {
+    width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 152px;
+}
+
+
+
+/*배너*/
+.main1 .banner {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-bottom: 32px;
+}
+
+.main1 .banner{
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+
+.main1 .pager {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main1 .pager ul {
+    display: flex;
+    align-items: center;
+}
+
+.main1 .pager li {
+    width: 20%;
+    height: 4px;
+    background-color: #c0c0c0;
+    text-indent: -99999px;
+    opacity: 0.5;
+}
+
+.main1 .pager .active {
+    opacity: 1;
+}
+
+
+/*이벤트*/
+.sect-title {
+    margin-bottom: 10px;
+}
+
+.main2 .evnet-list ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.evnet-list li {
+    width: 425px;
+    text-align: center;
+}
+
+.evnet-list li .photo {
+    margin-bottom: 14px;
+}
+
+.evnet-list li .photo{
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.evnet-list li .photo img {
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+
+.evnet-list li:hover .photo img {
+    transform: scale(1.5);
+}
+
+.evnet-list li .event-name {
+    font-size: 18px;
+    color: #121212;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.evnet-list li .event {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+
+
+
+/*인기상품*/
+.main3 .title {
+    margin-bottom: 40px;
+}
+
+.main3 .hash {
+    margin-bottom: 40px;
+}
+
+.main3 .hash ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.main3 .hash .active button {
+    padding-bottom: 6px;
+    /* 글자 아래쪽 여백 */
+    padding-right: 2px;
+    border-bottom: 2px solid #121212;
+}
+
+.main3 .hash button {
+    color: #7e7e7e;
+    font-weight: 600;
+}
+
+.main3 .hash button:hover {
+    padding-bottom: 6px;
+    /* 글자 아래쪽 여백 */
+    padding-right: 2px;
+    border-bottom: 2px solid #121212;
+}
+
+.main3 .item-list {
+    display: flex;
+    gap: 24px;
+}
+.main3 .item-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main3 .item-list .next {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 24px;
+}
+
+.main3 .item-list .shoes {
+    margin-bottom: 4px;
+}
+
+.main3 .item-list .explain {
+    background-color: #F0F2F5;
+    height: 120px;
+    position: relative;
+    display: block;
+    border-radius: 0 0 30px 30px;
+}
+
+
+.main3 .item-list .explain a {
+    display: block;
+    padding: 18px;
+    color: #121212;
+    word-wrap: break-word;
+}
+
+.main3 .item-list .explain .pd-name1 {
+    font-size: 16px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.main3 .item-list .explain .pd-name2 {
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+
+.main3 .item-list .explain .price {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main3 .item-list .shoes {
+    position: relative;
+}
+.main3 .favo {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*신제품*/
+
+.main4 .title {
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.new-product ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+
+
+
+/* 브랜드 탑 */
+.main5 .title {
+    margin-bottom: 0;
+}
+.main5 .sect-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+.main5 .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.main5 .plus .on {
+    display: none;
+}
+
+.main5 .plus .default {
+    display: none;
+}
+
+.main5 .plus .on {
+    display: block;
+}
+
+.main5 .pager {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.main5 .pager ul {
+    display: flex;
+}
+
+.main5 .pager li {
+    width: 50%;
+    height: 4px;
+    background-color: #c0c0c0;
+    text-indent: -99999px;
+    opacity: 0.5;
+}
+
+.main5 .pager .active {
+    opacity: 1;
+    
+}
+
+.product ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.product .photo {
+    margin-bottom: 8px;
+}
+
+.product .branditem {
+    color: #121212;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.product .price {
+    display: flex;
+}
+
+.product .price .updown {
+    margin-right: 8px;
+}
+
+.product .price .pricechange {
+    color: #0ACDA6;
+    margin-right: 30px;
+}
+
+.product .priceoriginal {
+    color: #121212;
+    font-weight: 500;
+}
+
+
+/*kream's pick*/
+
+.main6 {
+    display: flex;
+    gap: 32px;
+}
+
+.main6 {
+    position: relative;
+    width: 100%;
+}
+
+.main6::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #F0F2F5;
+}
+
+.main6 .title {
+    margin-bottom: 76px;
+}
+
+.main6 .title ul {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.main6 .title li {
+    text-align: center;
+}
+
+.main6 .sect-title {
+    color: #0ACDA6;
+}
+
+.main6 .sub-title {
+    font-size: 18px;
+}
+
+.main6 .inner {
+    position: relative;
+    width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    display: flex;
+    gap: 32px;
+}
+
+.main6 .right .pick_item ul {
+    display: flex;
+    gap: 60px;
+}
+
+.main6 .right .pick_item li {
+    text-align: center;
+}
+
+
+.main6 .right .pick_item .picks_item {
+    overflow-wrap: break-word;
+    color: #121212;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.main6 .right .pick_item .itemprice {
+    color: #121212;
+    font-weight: 600;
+}
+
+/*kream's style*/
+.main7 .title {
+    margin-bottom: 34px;
+}
+
+.main7 .kremastyle {
+    display: flex;
+    gap: 24px;
+}
+
+.main7 .style1 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.main7 .style1 .explain {
+    background-color: #ffffff;
+    width: 310px;
+    height: 328px;
+    position: relative;
+    display: block;
+    border: 1px solid #dddddd;
+    border-radius: 0 0 30px 30px;
+}
+
+
+.main7 .style1 .explain .item1 {
+    color: #121212;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    margin-top: 18px;
+    margin-bottom: 48px;
+}
+
+.main7 .style1 .explain .item1 a {
+    margin-right: 22px;
+}
+
+
+.main7 .style1 .explain .item-ex {
+    color: #121212;
+    font-weight: 500;
+}
+
+.main7 .style1 .item-name {
+    overflow-wrap: break-word;
+    margin-bottom: 36px;
+}
+
+.main7 .style1 .explain .item2 {
+    color: #121212;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    justify-content: space-between;
+}
+
+.main7 .style1 .explain .item2 a {
+    margin-right: 22px;
+}
+
+.main7 .style2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main7 .style2 .explain {
+    background-color: #ffffff;
+    width: 310px;
+    height: 328px;
+    position: relative;
+    display: block;
+    border: 1px solid #dddddd;
+    border-radius: 0 0 30px 30px;
+}
+
+.main7 .style2 .explain .item1 {
+    color: #121212;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    margin-top: 18px;
+    margin-bottom: 48px;
+}
+
+.main7 .style2 .explain .item1 a {
+    margin-right: 22px;
+}
+
+.main7 .style2 .explain .item-ex {
+    color: #121212;
+    font-weight: 500;
+}
+
+.main7 .style2 .item-name {
+    overflow-wrap: break-word;
+    margin-bottom: 36px;
+}
+
+.main7 .style2 .explain .item2 {
+    color: #121212;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    justify-content: space-between;
+}
+
+.main7 .style2 .explain .item2 a {
+    margin-right: 22px;
+}
+
+
+.main7 .style3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main7 .style3 .explain {
+    background-color: #ffffff;
+    width: 310px;
+    height: 328px;
+    position: relative;
+    display: block;
+    border: 1px solid #dddddd;
+    border-radius: 0 0 30px 30px;
+}
+
+.main7 .style3 .explain .item1 {
+    color: #121212;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    margin-top: 18px;
+    margin-bottom: 48px;
+}
+
+.main7 .style3 .explain .item1 a {
+    margin-right: 22px;
+}
+
+.main7 .style3 .explain .item-ex {
+    color: #121212;
+    font-weight: 500;
+}
+
+.main7 .style3 .item-name {
+    overflow-wrap: break-word;
+    margin-bottom: 28px;
+}
+
+.main7 .style3 .explain .item2 {
+    color: #121212;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    justify-content: space-between;
+}
+
+.main7 .style3 .explain .item2 a {
+    margin-right: 22px;
+}
+
+
+.main7 .style4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main7 .style4 .explain {
+    background-color: #ffffff;
+    width: 310px;
+    height: 328px;
+    position: relative;
+    display: block;
+    border: 1px solid #dddddd;
+    border-radius: 0 0 30px 30px;
+}
+
+.main7 .style4 .explain .item1 {
+    color: #121212;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    margin-top: 18px;
+    margin-bottom: 48px;
+}
+
+.main7 .style4 .explain .item1 a {
+    margin-right: 22px;
+}
+
+.main7 .style4 .explain .item-ex {
+    color: #121212;
+    font-weight: 500;
+}
+
+.main7 .style4 .item-name {
+    overflow-wrap: break-word;
+    margin-bottom: 32px;
+}
+
+.main7 .style4 .explain .item2 {
+    color: #121212;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    justify-content: space-between;
+}
+
+.main7 .style4 .explain .item2 a {
+    margin-right: 22px;
+}
+
+/*푸터*/
+ #footer {
+    padding-top: 24px;
+    padding-bottom: 80px;
+    background-color: #eee;
+ }
+
+.foot1 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.foot1 .left {
+    display: flex;
+    
+    gap: 120px;
+}
+
+.foot1 .logo {
+    margin-left: 32px;
+}
+
+.foot1 .left a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #121212;
+}
+
+.foot1 .footer_menu {
+    display: flex;
+    gap: 60px;
+    margin-top: 12px;
+}
+
+.foot1 .coparea {
+    margin-top: 14px;
+} 
+
+.foot1 .sp1 {
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+
+.foot1 .term_list {
+    display: flex;
+    gap: 52px;
+    margin-bottom: 24px;
+}
+
+.foot1 .menu_box .menu_item1 { 
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.foot1 .menu_box .menu_item {
+    
+    margin-bottom: 16px;
+}
+
+.foot1 .menu_box .menu_item2 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+
+.foot1 .term_list a {
+    color: #121212;
+    font-weight: 600;
+}
+
+.foot1 .bus_info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 522px;
+}
+
+.foot1 .bus_info a {
+    color: #121212;
+}
+ 
+.foot1 .sns ul {
+    display: flex;
+}

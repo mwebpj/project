@@ -1,0 +1,237 @@
+@charset "utf=8";
+
+@font-face {
+  font-family: 'TAEBAEK milkyway';
+  src: url('font/TAEBAEK milkyway.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 공통 부분 */
+
+body{
+    font-family: 'TAEBAEK milkyway', sans-serif;
+    background-color: #F2F7F5;
+}
+.title{
+    font-size: 32px;
+    -webkit-text-stroke: #3A3A78 4.5px;
+    line-height: 1.5;
+    color: #3A3A78;
+    border-bottom: 2.5px solid#3A3A78;
+}
+
+.wrapper{
+    min-width: 828px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/aboutme-bg.png);
+    background-repeat: no-repeat;
+    background-position: top -50;
+}
+
+.info,
+.sk-li,
+.ex-edu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* info part */
+
+.info{
+    position: relative;
+    width: 828px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+.info .title{
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+.info .coment{
+    position: absolute;
+    top: 180px;
+    right: 0;
+    font-size: 28px;
+    -webkit-text-stroke: #3A3A78 2px;
+    color: #3A3A78;
+}
+.info .infomation{
+    position: absolute;
+    top: 580px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    line-height: 2;
+}
+
+/* sk-li part */
+.sk-li{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+.sk-li .title{
+    margin-bottom: 40px;
+}
+.sk-infomation{
+    display: flex;
+}
+.sk-infomation .left{
+    display: flex;
+    gap: 24px;
+    background-color: #D9D2E7;
+    border-radius: 0px 80px 80px 0px;
+    width: 720px;
+    height: 463px;
+}
+.sk-infomation .right{
+    background-color: #3A3A78;
+    border-radius: 80px 0px 0px 80px;
+    width: 720px;
+    height: 463px;
+}
+.sk-infomation .left ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sk-infomation .right-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sk-li .left,
+.sk-li .right{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-info ul{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.sk-infomation .left ul li,
+.info .infomation ul li {
+    font-size: 24px;
+    -webkit-text-stroke: #2C2C3F 1.5px;
+    color: #2C2C3F;
+}
+.sk-infomation .right-menu ul li{
+    font-size: 24px;
+    -webkit-text-stroke: #F2F7F5 1px;
+    color: #F2F7F5;
+}
+
+.sk-infomation .right .right-info img{
+    width: 25px;
+    height: 25px;
+
+}
+
+
+/* ex-edu part */
+
+.ex-edu{
+    position: relative;
+    width: 1240px;
+    height: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/e-bg-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.name{
+    font-size: 24px;
+    line-height: 3;
+    -webkit-text-stroke: #3A3A78 2.5px;
+    color: #3A3A78;
+}
+.date,
+.present {
+    font-size: 18px;
+    -webkit-text-stroke: #2C2C3F 1.5px;
+    color: #2C2C3F;
+}
+
+
+.present{
+    position: absolute;
+    top: 150px;
+    left: 605px;
+}
+
+.ex-edu .left ul{
+    position: absolute;
+    left: -10px;
+    top: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 210px;
+    text-align: end;
+}
+
+.ex-edu .right ul{
+    position: absolute;
+    left: 780px;
+    top: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 215px;
+    text-align: start;
+}
+.ex-edu .right li:last-child, 
+.ex-edu .left li:last-child {
+    width: 500px;
+    line-height: 2;
+}
+/* .name-date .one{
+    position: absolute;
+    top: 340px;
+    left: 790px;
+}
+.name-date .two{
+    position: absolute;
+    top: 520px;
+    right: 750px;
+}
+.name-date .three{
+    position: absolute;
+    top: 700px;
+    left: 790px;
+}
+.name-date .four{
+    position: absolute;
+    top: 880px;
+    right: 750px;
+}
+.name-date .five{
+    position: absolute;
+    top: 1050px;
+    left: 790px;
+}
+.name-date .last1{
+    position: absolute;
+    top: 1220px;
+    right: 750px;
+}
+.name-date .last2{
+    position: absolute;
+    top: 1400px;
+    left: 790px;
+} */

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+.aboutme{
+    min-width: 1440px;
+    /* minimun 최소너비값(필수)*/
+    max-width: 1920px;
+    /* maximum 최대너비값 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gnb{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    top: 32px;
+    left: 240px;
+}
+.gnb >ul{
+    display: flex;
+}
+.gnb li{
+    display: flex;
+    align-items: center;
+}
+.gnb li:last-child{
+    gap: 8px;
+}
+.gnb >ul >li , .title{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px;
+    color: #1A1A1A;
+}
+.gnb >ul >li a{
+    color: #1A1A1A;
+}
+.gnb li:first-child::after {
+    content: "";
+    display: inline-block;
+    margin-left: 15px;
+    width: 1px;
+    height: 12px;
+    background-color:#1A1A1A;
+}
+.title{
+    text-align: center;
+}
+.title a {
+    position: relative;
+    display: inline-block;
+    color: #1A1A1A;    
+}
+.title a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #1A1A1A;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.title a:hover::after {
+    opacity: 1;
+}
+.banilaco{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+}
+.banilaco img{
+    width: 100%;
+    height: auto;
+}
