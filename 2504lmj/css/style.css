@@ -43,7 +43,12 @@ header{
 
 /* 메인 콘텐츠 */
 /* main1_hero */
-#main1 {
+#main1 { 
+    align-items: center;
+    justify-content: center;  
+    margin: 0 auto;           
+    gap: 80px;                  
+    height: auto; 
     padding-top: 100px;
     display: flex;
     margin-bottom: 120px;
@@ -68,12 +73,25 @@ header{
 
 /* main2_about me */
 #main2{
-    height: 720px;
     display: flex;
+    align-items: center;
+    justify-content: center;         
+    margin: 0 auto;            
+    gap: 200px;                
+    padding: 100px 20px;     
+    height: auto;          
 }
 #main2 .photo{
+    display: flex;
+    justify-content: center;
     align-items: start;
-    margin-right: 200px;
+}
+#main2 .photo img {
+  max-width: 100%;
+  height: auto;
+}
+#main2 .text {
+    max-width: 600px;
 }
 #main2 .text .text1{
     font-size: 30px;
@@ -149,7 +167,7 @@ header{
     font-size: 30px;
     font-weight: normal;
 }
-#main4 .center .website{
+#main4 .center .website_list, .detail_page_list{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -163,12 +181,25 @@ header{
 #main4 .modal li{
     display: none;
 }
-
+#main4 .detail_page{
+    display: none;
+}
+#website_btn:hover{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #333;
+    font-weight: 500;
+}
+#detail_page_btn:hover{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #333;
+    font-weight: 500;
+}
 
 /* 푸터 */
 #footer{
     height: 720px;
     text-align: center;
+    background-color: #FFF0EE;
 }
 #footer h1{
     font-size: 70px;
