@@ -49,6 +49,14 @@ body{
     margin-right: auto;
     margin-bottom: 150px;
 }
+/* .info .pro-img img{
+    width: 450px;
+    height: 550px;
+    position: absolute;
+    top: 250px;
+    left: 320px;
+    overflow: hidden;
+} */
 .info .title{
     position: absolute;
     top: 80px;
@@ -200,3 +208,38 @@ body{
     width: 500px;
     line-height: 2;
 }
+/* .name-date .one{
+    position: absolute;
+    top: 340px;
+    left: 790px;
+}
+.name-date .two{
+    position: absolute;
+    top: 520px;
+    right: 750px;
+}
+.name-date .three{
+    position: absolute;
+    top: 700px;
+    left: 790px;
+}
+.name-date .four{
+    position: absolute;
+    top: 880px;
+    right: 750px;
+}
+.name-date .five{
+    position: absolute;
+    top: 1050px;
+    left: 790px;
+}
+.name-date .last1{
+    position: absolute;
+    top: 1220px;
+    right: 750px;
+}
+.name-date .last2{
+    position: absolute;
+    top: 1400px;
+    left: 790px;
+} */
