@@ -1,0 +1,205 @@
+</html>@charset "utf-8";
+
+ul{
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;  /* ul태그 점제거 */
+}
+/* 헤더 */
+.background-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.background-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+  header {
+      width: 100%;
+      padding: 30px 0;
+      position: fixed;
+    }
+
+  nav {
+      display: flex;
+      justify-content: flex-start;
+      gap: 140px;
+      padding: 40px 125px 80px;
+    }
+
+  nav a {
+      color: #111;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+  nav a:hover {
+      color: #9e7a6d;
+    }
+
+  .main-title {
+      padding: 566px 125px 80px;
+      font-size: 77px;
+      font-weight: 700;
+    }
+
+  .main-title p {
+      font-size: 27px;
+      font-weight: 300;
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+  .main-title span {
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+  }
+
+  .side {
+  position: absolute;
+  right: 165px;
+  top: 800px;
+  height: auto;
+}
+
+/* 2층 소개 */
+
+/* 전체 구조 정렬 */
+.about-me {
+  
+  max-width: 1200px;
+  margin: 450px auto 0;
+  padding: 0 52px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  margin-bottom:120px;
+  color: #1a1a1a;
+}
+
+.about-me-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 480px;
+}
+
+/* 왼쪽 박스 */
+.left {
+  flex: 1;
+}
+
+.left .t1 {
+  font-size: 24px;
+  font-weight: 200;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.left .t2 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+.left .t3 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.left .bottom {
+  display: flex;
+  gap: 40px;
+  align-items: flex-end;
+}
+
+.left .name {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* 오른쪽 박스 */
+.right {
+  flex: 1;
+  color: #1a1a1a;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.section-block {
+  margin-bottom: 40px; /* 각 블록 사이 간격 */
+}
+
+.right strong {
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.keyword-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.keyword-tag {
+  padding: 4px 10px;
+  border: 1px solid #555;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #141414;
+}
+
+/* 스킬 리스트 */
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+}
+
+.skill-name {
+  width: 120px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #111;
+}
+
+.circle-rating {
+  display: flex;
+  gap: 6px;
+}
+
+.circle-rating span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #888;
+}
+
+.circle-rating .filled {
+  background-color: #525252;
+}
